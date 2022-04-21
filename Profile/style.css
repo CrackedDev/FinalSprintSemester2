@@ -1,0 +1,155 @@
+body {
+  position: relative;
+  width: auto;
+  height: 1024px;
+
+  background: linear-gradient(
+    180deg,
+    #ff0000 4.69%,
+    rgba(0, 0, 0, 0) 11.98%,
+    #ff0000 16.15%,
+    rgba(167, 0, 0, 0.653846) 60.94%,
+    rgba(0, 0, 0, 0) 65.1%,
+    #800000 72.92%
+  );
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+@font-face {
+  font-family: GrapeNuts;
+  src: url("./font/GrapeNuts-Regular.ttf");
+}
+h1 {
+  font-family: GrapeNuts;
+  text-align: center;
+}
+img {
+  border-radius: 10%;
+}
+#Images {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 5%;
+  padding-top: 20px;
+  text-align: center;
+  font-family: GrapeNuts;
+}
+
+.caption {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.Name {
+  float: left;
+  flex-direction: column;
+  font-family: GrapeNuts;
+  text-align: left;
+  padding-left: 100px;
+  padding-top: 100px;
+  width: 100%;
+  bottom: 20px;
+  font-size: xx-large;
+  color: white;
+  text-shadow: 0 0 30px rgb(0, 0, 0);
+}
+
+.computerBody {
+  position: relative;
+  width: auto;
+  height: 100vh;
+
+  background: linear-gradient(
+    180deg,
+    #ff0000 4.69%,
+    #ff0000 27.6%,
+    #800000 75%
+  );
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.computerHeader {
+  display: inline;
+  font-family: Grapenuts;
+  font-size: xx-large;
+  color: white;
+  text-shadow: 0 0 30px rgb(0, 0, 0);
+  text-align: left;
+  margin-left: 20px;
+}
+
+.frustrated {
+  display: inline;
+  float: right;
+  text-align: right;
+  margin: 0px 0px 15px 15px;
+}
+
+#backbutton {
+  display: inline-block;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+a {
+  color: white;
+  text-shadow: 0 0 30px rgb(0, 0, 0);
+}
+
+#footer {
+  position: fixed;
+  bottom: 200px;
+  left: 50%;
+  width: 100%;
+  height: 100px;
+}
+
+.grid-container {
+  position: fixed;
+  padding-top: 250px;
+
+  display: grid;
+  column-gap: 300px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  text-shadow: 0 0 30px rgb(0, 0, 0);
+}
+
+.one {
+  grid-column: 1;
+  grid-row: 1;
+}
+.two {
+  grid-column: 2;
+  grid-row: 1;
+}
+.three {
+  grid-column: 1;
+  grid-row: 2;
+}
+.four {
+  grid-column: 2;
+  grid-row: 2;
+}
+.five {
+  grid-column: 1;
+  grid-row: 3;
+}
+.six {
+  grid-column: 2;
+  grid-row: 3;
+}
+.seven {
+  grid-column: 1;
+  grid-row: 4;
+}
+.eight {
+  grid-column: 2;
+  grid-row: 4;
+}

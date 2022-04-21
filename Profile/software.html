@@ -6,16 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cody's Profile - Software Developer</title>
     <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"> </script>
   </head>
-  <body class="computerBody">
+  <body id= softbody class="computerBody">
     <header>
-    <div>
-      <h1 class="computerHeader">Cody Can Code...</h1>
-      
-    
-      <img class="frustrated" src="images/code.jpg" alt="" width="300" />
+    <div class="Grid1x3">
+      <div>
+        <h1 class="computerHeader">Cody Can Code...</h1>
+        <button id="backbutton" onClick="location.href='index.html';"value="Back" >Back</button>
+      </div>
+      <div>
+        <button id="enterMatrixButton" onclick="enterMatrix()">ENTER THE MATRIX</button>
+      </div>
+      <div class="headerpic">
+        <div class="imageContainer">
+          <div>
+            <img id='container' class="frustrated" src="images/code1.jpg" alt="" width="300" />
+          </div>
+          <div class="imgButton">
+            <input type='button' value='prev' onclick='ic1.prev("container")' />
+            <input type='button' value='next' onclick='ic1.next("container")' />
+          </div>
+        </div>
+      </div>
+    </div>
     </header>
-    <button id="backbutton" onClick="location.href='index.html';"value="Back" >Back</button>
+    <br/>
+    <div id="picButtons">
+     
+    </div>
       <br />
       <section>
       <div class="grid-container">

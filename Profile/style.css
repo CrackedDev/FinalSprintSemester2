@@ -70,9 +70,17 @@ img {
   );
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.Grid1x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.Grid1x3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
 .computerHeader {
-  display: inline;
+  display: block;
   font-family: Grapenuts;
   font-size: xx-large;
   color: white;
@@ -80,19 +88,31 @@ img {
   text-align: left;
   margin-left: 20px;
 }
-
+.headerpic {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
+}
 .frustrated {
-  display: inline;
+  display: flex;
   float: right;
   text-align: right;
   margin: 0px 0px 15px 15px;
 }
+.imgButton {
+  display: inline;
+  margin-left: 120px;
+}
 
 #backbutton {
-  display: inline-block;
   text-align: left;
   margin-left: 20px;
-  margin-top: 30px;
+}
+
+#matrix {
+  width: "100%";
+  height: "100%";
+  background-image: url("./images/matrix.gif");
 }
 
 a {
@@ -110,7 +130,7 @@ a {
 
 .grid-container {
   position: fixed;
-  padding-top: 250px;
+  padding-top: 50px;
 
   display: grid;
   column-gap: 300px;
@@ -121,6 +141,10 @@ a {
   text-shadow: 0 0 30px rgb(0, 0, 0);
 }
 
+#enterMatrixButton {
+  margin-top: 30px;
+  padding: 10px;
+}
 .one {
   grid-column: 1;
   grid-row: 1;

@@ -5,7 +5,7 @@ var ic1 = new ImageCollection([
   "images/code4.jpg",
   "images/code5.jpg",
 ]);
-
+//picture button
 function ImageCollection(images) {
   this.images = images;
   this.i = 0;
@@ -22,7 +22,7 @@ function ImageCollection(images) {
     img.src = images[this.i];
   };
 }
-
+// matrix button
 function enterMatrix() {
   document.getElementById("softbody").style.backgroundImage =
     "url(./images/matrix.gif)";
